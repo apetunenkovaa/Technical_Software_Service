@@ -23,6 +23,9 @@ namespace Technical_Software_Service
         public MainWindow()
         {
             InitializeComponent();
+
+
+
         }
     }
 }
