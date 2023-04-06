@@ -16,16 +16,13 @@ using System.Windows.Shapes;
 namespace Technical_Software_Service
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Page_Achievement.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page_Achievement : Page
     {
-        public MainWindow()
+        public Page_Achievement()
         {
             InitializeComponent();
-            DataBase.Base = new HelpdeskEntities();
-            ClassFrame.MainF = Mframe;
-            ClassFrame.MainF.Navigate(new Page_Authorization());
         }
     }
 }

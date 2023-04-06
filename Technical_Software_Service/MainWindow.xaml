@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Technical_Software_Service"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Автоматизированная система управления службой технической поддержки ГАУ НО «ЦИТ»" Height="800" Width="1250" MinHeight="750" MinWidth="1250">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="0" Source="\resource\Logo.png" Margin="10 0 0 0"/>
+            <TextBlock Grid.Column="1" Text="Автоматизированная система управления службой технической поддержки ГАУ НО «ЦИТ»" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="22"/>
+        </Grid>
+        <Frame Grid.Row="1" Name="Mframe" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Window>
