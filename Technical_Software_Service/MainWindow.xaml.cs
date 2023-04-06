@@ -23,9 +23,9 @@ namespace Technical_Software_Service
         public MainWindow()
         {
             InitializeComponent();
-
-
-
+            DataBase.Base = new HelpdeskEntities();
+            ClassFrame.MainF = Mframe;
+            ClassFrame.MainF.Navigate(new Page_Authorization());
         }
     }
 }
