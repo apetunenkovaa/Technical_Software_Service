@@ -31,7 +31,7 @@ namespace Technical_Software_Service
         public int CategoryId { get; set; }
         public int ImportanceTypeId { get; set; }
         public int SolutionId { get; set; }
-        public System.DateTime LastUpdate { get; set; }
+        public Nullable<System.DateTime> LastUpdate { get; set; }
     
         public virtual Categories Categories { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

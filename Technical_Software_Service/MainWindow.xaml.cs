@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,12 +21,17 @@ namespace Technical_Software_Service
     /// </summary>
     public partial class MainWindow : Window
     {
+        Users user;
         public MainWindow()
         {
             InitializeComponent();
             DataBase.Base = new HelpdeskEntities();
             ClassFrame.MainF = Mframe;
-            ClassFrame.MainF.Navigate(new Page_Authorization());
+            ClassFrame.MainF.Navigate(new Page_Authorization());                       
         }
+            //tbUserName.Text = tbUserName.Text + user.LastName + " " + user.FirstName + " " + user.MiddleName;
+            //tbUserRole.Text = tbUserRole.Text + user.Roles.Kind;
+            //tbUserPost.Text = tbUserPost.Text + user.Positions.Kind;
+            //tbUserScore.Text = tbUserScore.Text + user.Score;
     }
 }
