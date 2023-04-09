@@ -18,7 +18,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Image Name="ImageBack" Grid.Row="0" Source="/Resources/Arrow.png" Width="60" Height="60" HorizontalAlignment="Left" Margin="10 10 0 0" MouseDown="ImageBack_MouseDown"/>
+        <Image Name="ImageBack" Grid.Row="0" Source="/Resources/Arrow.png" Width="30" Height="30" HorizontalAlignment="Left" MouseDown="ImageBack_MouseDown"/>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1.5*"/>
