@@ -89,5 +89,15 @@ namespace Technical_Software_Service.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon НО_Герб_краткий {
+            get {
+                object obj = ResourceManager.GetObject("НО_Герб_краткий", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }
